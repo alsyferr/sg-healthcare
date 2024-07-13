@@ -24,9 +24,9 @@ const NewAppointment = async ({params: {userId}}: SearchParamProps) => {
           />
 
           <AppointmentForm 
-            type="create"
+            patientId={patient?.$id}
             userId={userId}
-            patientId={patient.$id}
+            type="create"
           />
 
           <p className="copyright mt-10 py-12">
